@@ -1,47 +1,49 @@
 # Module 03 Mini-Project: Rock, Paper, Scissors
 
-In this activity, you will work with a group to build a game using only JavaScript.
+In this activity, I worked with a group to build a game using only JavaScript.
+We created a browser game based on Rock, Paper, Scissors against an automated opponent.
 
-## Instructions
+## Table of Contents
 
-The completed application should meet the following criteria:
+- [Preview](#preview)
+- [Usage](#usage)
+- [Game Play](#game-play)
+- [Project Specifications](#project-specifications)
+- [Credits](#credits)
 
-* As a user, I want to play Rock, Paper, Scissors against an automated opponent.
+## Preview
 
-* As a user, I can enter R, P, or S to signify my choice of rock, paper, or scissors.
+## Usage
 
-* As a user, I expect the computer to choose R, P, or S in return.
+## Game Play
 
-* As a user, I want the option to play again whether I win or lose.
+- User types R, P, or S to signify my choice of rock, paper, or scissors.
+    1. R = rock
+    2. P = paper
+    3. S = scissors
 
-* As a user, I want to see my total wins, ties, and losses after each round.
+- The computer will randomly choose R, P, or S in return.
 
-### Specifications
+### Project Specifications
 
-* Must use the `alert()`, `confirm()`, and `prompt()` methods to collect user input and display information to the user.
+1. Must use the `alert()`, `confirm()`, and `prompt()` methods to collect user input and display information to the user.
+2. The computer's selection must be random to ensure a fair game.
+3. User's total wins, ties, and losses are displayed after each round.
+4. User has the option to play again whether they win or lose.
 
-* The computer's selection must be random to ensure a fair game.
+## Credits
 
-## 💡 Notes
+**Group Members**
+Victoria McNorrill
+Chad Mullins
 
-Refer to the documentation:
 
-* [MDN Web Docs on window.alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+**Program**
+[Georgia Tech Coding Boot Camp](https://bootcamp.pe.gatech.edu/coding/)
 
-* [MDN Web Docs on window.confirm()](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
+**Reference:**
+- [MDN Web Docs on window.alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+- [MDN Web Docs on window.confirm()](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
+- [MDN Web Docs on window.prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+- [MDN Web Docs on Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
-* [MDN Web Docs on window.prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
-
-* [MDN Web Docs on Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your group to further your knowledge:
-
-* How can you customize the appearance of the `alert()`, `confirm()`, and `prompt()` dialog boxes?
-
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

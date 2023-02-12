@@ -1,29 +1,25 @@
 var win = 0;
 var lose = 0;
 var tie = 0;
-var gameSum = 0;
+var totalGames = 0;
+
 
 // array of choices for the computer
 var choices = ['R', 'P', 'S'];
 
 var playGame = function() {
-  varUserChoice = window.prompt("Enter R, P, or S:");
-
-  // function adding all games won, lost and tied
-  function gameSum(a+b+c) {
-  var gameSum= wins + losses + ties;
-}
+  var userChoice = window.prompt("Enter R, P, or S:");
 
   // if user cancels game
   if (!userChoice) {
     return;
   }
-
   //better comparison in case use enters lower cas letter
   userChoice = userChoice.toUpperCase();
 
   //Choose from random index in array
-  //math.floor, rounding up/making a whole number.... math.random chooses any random number
+  //math.floor, any possible number, including decimals
+  //math.random chooses any random whole number
   var index = Math.floor(Math.random() * choices.length);
   var computerChoice = choices[index];
 
@@ -31,7 +27,8 @@ var playGame = function() {
 
   //tie
   if (userChoice === computerChoice) {
-    ties++;
+    tie++;
+    totalGames++;
     window.alert("It's a tie!");
   //player won
   } else if (
@@ -39,16 +36,23 @@ var playGame = function() {
     (userChoice === "P" && computerChoice === "R") || 
     (userChoice === "S" && computerChoice === "P")
   ) {
-    wins++;
+    win++;
+    totalGames++;
     window.alert("You win!!");
   //player lost
   } else {
-    losses++;
+    lose++;
+    totalGames++;
     window.alert("You lost!");
   }
 
+    // function adding all games won, lost and tied
+    //var totalPlayed = function() {
+      //var total = win + lose + tie;
+    //}
+
   window.alert(
-    "Stats:\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties
+    "Stats:\nWins: " + win + "\nLosses: " + lose + "\nTies: " + tie + "\nTotal Games: " + totalGames
   );
 
   var playAgain = window.confirm("Play again?");
